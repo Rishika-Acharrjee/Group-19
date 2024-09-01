@@ -1,0 +1,78 @@
+\documentclass{article}
+\pagestyle{empty}
+\usepackage{calc}
+\usepackage{graphicx}
+\usepackage{float}
+\usepackage{eso-pic}
+
+\newlength{\PageFrameTopMargin}
+\newlength{\PageFrameBottomMargin}
+\newlength{\PageFrameLeftMargin}
+\newlength{\PageFrameRightMargin}
+
+\setlength{\PageFrameTopMargin}{2cm}
+\setlength{\PageFrameBottomMargin}{2cm}
+\setlength{\PageFrameLeftMargin}{2cm}
+\setlength{\PageFrameRightMargin}{2cm}
+
+\makeatletter
+
+\newlength{\Page@FrameHeight}
+\newlength{\Page@FrameWidth}
+
+\AddToShipoutPicture{
+  \thinlines
+  \setlength{\Page@FrameHeight}{\paperheight-\PageFrameTopMargin-\PageFrameBottomMargin}
+  \setlength{\Page@FrameWidth}{\paperwidth-\PageFrameLeftMargin-\PageFrameRightMargin}
+  \put(\strip@pt\PageFrameLeftMargin,\strip@pt\PageFrameTopMargin){
+    \framebox(\strip@pt\Page@FrameWidth, \strip@pt\Page@FrameHeight){}}}
+
+\makeatother
+\begin{document}
+
+\begin{figure}[h]
+    \includegraphics[width=1\textwidth]{Line.png}
+\end{figure}
+
+\begin{figure}[h]
+\begin{center}
+    \includegraphics[width=0.5\textwidth]{MAKAUT_LOGO}
+\end{center}
+\end{figure}
+\vspace{1cm}
+\begin{center}
+     {\Huge Lab Notebook}
+\end{center}
+\begin{center}
+    {\Large
+    Software Tools and Technology Lab}
+\end{center}
+\begin{center}
+        {\Large SEBCA1191}
+\end{center}
+\vspace{1cm}
+\renewcommand{\arraystretch}{2}
+\hspace*{0.08in}
+\begin{tabular}{ |c|c|c| }
+\hline
+\multicolumn{3}{|c|}{\Large \textbf{\textit{Group 19}}} \\
+\hline
+NAME & ROLL NO.& DEPARTMENT \\
+\hline
+Rishika Acharjee [Group-Leader]  & 30001223016 & BCA \\
+\hline
+Ankita Ghoshal & 330085323012 & Bsc IT in CS \\
+\hline
+Moumita Modak  & 30054623014 & Bsc IT in AI \\
+\hline
+Pritam Sarkar & 30001223042 & BCA \\
+\hline
+Titli Biswas & 30059223018 & BSc in Data Science \\
+\hline
+\end{tabular}
+\vspace{1cm}
+\begin{center}
+    \includegraphics[width=1\textwidth]{Line.png}
+\end{center}
+
+\end{document}
