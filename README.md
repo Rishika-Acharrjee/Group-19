@@ -15,14 +15,14 @@ This repository contains the LaTeX file for our group task. The file is structur
 1. **Clone the Repository**: Clone this repository to your local machine using the following command:
 
 2. **Add Your Lab Notebook Entry**:
-- Open the `lab_notebook.tex` file.
-- Locate the section assigned to you (or add a new section with your name, roll number, and department).
+- Open the `main.tex` file.
+- Locate the section assigned to you (or add a new section).
 - Write your lab notebook entry in LaTeX format.
 
 3. **Commit Your Changes**:
 - After adding your entry, commit the changes with a meaningful message. Example:
   ```
-  git add lab_notebook.tex
+  git add main.tex
   git commit -m "Added lab entry by [Your Name]"
   ```
 
