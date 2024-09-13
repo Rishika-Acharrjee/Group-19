@@ -4,6 +4,10 @@
 \usepackage{graphicx}
 \usepackage{float}
 \usepackage{eso-pic}
+\usepackage{url}
+\usepackage{hyperref}
+\usepackage{listings}
+\usepackage{xcolor}
 
 \newlength{\PageFrameTopMargin}
 \newlength{\PageFrameBottomMargin}
@@ -71,6 +75,14 @@ Titli Biswas & 30059223018 & BSc in Data Science \\
 \hline
 \end{tabular}
 \vspace{1cm}
+
+\lstset{
+    basicstyle=\ttfamily,
+    keywordstyle=\color{blue},
+    commentstyle=\color{gray},
+    stringstyle=\color{purple},
+    breaklines=true,
+}
 \begin{center}
     \includegraphics[width=1\textwidth]{Line.png}
 \end{center}
@@ -219,8 +231,124 @@ To add this calculator program to a GitHub repository, follow these steps:
     \item Go to your GitHub repository URL in a web browser.
     \item Verify that the \texttt{calculator.c} file is listed and accessible in the repository.
 \end{enumerate}
-\end{document}
+\vspace{10in}
+\begin{center}
+    \textbf{\LARGE{{Member 4: [Pritam Sarkar]}}}
+\end{center}
+\section{Introduction}
+This document outlines the process of modifying a "Submit" button in a mind reader application and submitting a pull request to the original GitHub repository. The repository in question is available at \url{https://github.com/GeekAyan/STT}. The modification includes renaming the button and fixing proportion issues.
 
+\subsection{Cloning the GitHub Repository}
+\textbf{Step}: Clone the GitHub repository using GitHub Desktop.
+
+\textbf{Action}:
+\begin{itemize}
+    \item Open GitHub Desktop and select \texttt{File > Clone Repository}.
+    \item Enter the repository URL: \url{https://github.com/GeekAyan/STT} and select a directory to clone it.
+\end{itemize}
+
+\subsection{Opening the Project in an IDE}
+\textbf{Step}: Open the cloned project using your preferred IDE (e.g., VS Code, PyCharm).
+
+\textbf{Action}:
+\begin{itemize}
+    \item Open the folder containing the cloned project.
+    \item Review the \texttt{README.md} for instructions on how to run the project.
+\end{itemize}
+
+\subsection{Install Dependencies}
+\textbf{Step}: Install any dependencies required by the project as per the \texttt{README.md} file.
+
+\textbf{Action}:
+\begin{itemize}
+    \item Set up the environment. If the project uses Python, create a virtual environment and install dependencies using:
+    \begin{lstlisting}[language=bash]
+    pip install -r requirements.txt
+    \end{lstlisting}
+    \item Follow other system requirements mentioned in the \texttt{README.md}.
+\end{itemize}
+
+\subsection{Running the Application}
+\textbf{Step}: Run the application as per the instructions in \texttt{README.md}.
+
+\textbf{Action}:
+\begin{itemize}
+    \item Use your IDE's terminal to run the project.
+    \item Ensure the application works as expected.
+\end{itemize}
+
+\subsection{Renaming the Submit Button}
+\textbf{Step}: Rename the button from "Submit" to "Chin Tapak Dum Dum."
+
+\textbf{Action}:
+\begin{itemize}
+    \item Find the code section responsible for the submit button's label.
+    \item Modify the label. For example:
+    \begin{lstlisting}[language=HTML]
+    <button id="submit" name="submit">Chin Tapak Dum Dum</button>
+    \end{lstlisting}
+\end{itemize}
+
+\subsection{Fixing the Button Proportion}
+\textbf{Step}: After renaming the button, analyze and adjust its proportions.
+
+\textbf{Action}:
+\begin{itemize}
+    \item Check the CSS properties related to the button's size, padding, and font.
+    \item Modify the button’s CSS if needed, for example:
+    \item Save changes and re-run the application to check the button's appearance.
+\end{itemize}
+
+\subsection{Testing the Application}
+\textbf{Step}: Test the application after modifying the button.
+
+\textbf{Action}: 
+\begin{itemize}
+    \item Run the application again to verify that the button looks correct and functions properly.
+\end{itemize}
+
+\subsection{Committing the Changes}
+\textbf{Step}: Commit your changes locally.
+
+\textbf{Action}:
+\begin{itemize}
+    \item Stage the files and commit with a descriptive message, for example:
+    \begin{lstlisting}[language=bash]
+    git commit -m "Renamed submit button and fixed proportion issue"
+    \end{lstlisting}
+\end{itemize}
+
+\subsection{Pushing Changes to Your Fork}
+\textbf{Step}: Push your changes to your GitHub fork.
+
+\textbf{Action}:
+\begin{itemize}
+    \item If you haven’t forked the repository, go to the GitHub page and fork it.
+    \item Add the forked repository as a remote and push your changes:
+    \begin{lstlisting}[language=bash]
+    git remote add origin https://github.com/<YourGitHubUsername>/STT.git
+    git push origin main
+    \end{lstlisting}
+\end{itemize}
+
+\subsection{Creating a Pull Request}
+\textbf{Step}: Create a pull request to the original repository.
+
+\textbf{Action}:
+\begin{itemize}
+    \item Go to your fork on GitHub and create a new pull request.
+    \item Provide a descriptive title and details of your changes.
+    \item Submit the pull request.
+\end{itemize}
+
+\subsection{Review and Approval}
+\textbf{Step}: Wait for feedback or approval.
+\textbf{Action}:
+\begin{itemize}
+    \item Respond to feedback or requested changes, if any.
+    \item Once approved, your changes will be merged into the original project.
+\end{itemize}
+\vspace{20in}
 \section*{Latex Assignment by Pabitra Sir}
 
 \subsection*{Entry by Titli Biswas}
@@ -299,3 +427,4 @@ To add this calculator program to a GitHub repository, follow these steps:
 \end{enumerate}
 
 \end{document}
+
