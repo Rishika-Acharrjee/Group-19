@@ -8,6 +8,13 @@
 \usepackage{hyperref}
 \usepackage{listings}
 \usepackage{xcolor}
+\usepackage[utf8]{inputenc}
+\usepackage{titlesec}
+\usepackage{fancyhdr}
+\usepackage{hyperref}
+\usepackage{fontawesome}
+\usepackage{enumitem}
+\usepackage{geometry}
 
 \newlength{\PageFrameTopMargin}
 \newlength{\PageFrameBottomMargin}
@@ -87,23 +94,31 @@ Titli Biswas & 30059223018 & BSc in Data Science \\
     \includegraphics[width=1\textwidth]{Line.png}
 \end{center}
 \newpage
-\newpage
+
+% Center the Index heading
 \begin{center}
-    \section*{\textcolor{blue}{\textbf{Index}}}
+    \Huge\textbf{Index}
 \end{center}
 
-\begin{table}[h!]
-\centering
-\begin{tabular}{|c|p{10cm}|}
+\vspace{1cm}
+
+% Table for Index with Sl. No., Experiment, and Page No. columns
+\begin{tabular}{|c|p{10cm}|c|}
     \hline
-    \textbf{Serial No.} & \textbf{Questions} \\ \hline
-    1 & Calculator Program using C \\ \hline
-    2 & Question 2 description here \\ \hline
-    3 & Question 3 description here \\ \hline
-    4 & Question 4 description here \\ \hline
-    5 & Question 5 description here \\ \hline
+    \textbf{Sl. No.} & \textbf{Experiment} & \textbf{Page No.} \\
+    \hline
+    1 & Lab Note Book & \\
+    \hline
+    2 & Lab 1: Calculator Program using C & 1-3\\
+    \hline
+    3 & Converting a submit button to Chin Tapak Dum Dum & 4-6 \\
+    \hline
+    4 & Mathematical Notation & 7-8\\
+    \hline
+    5 & CV & 9-10 \\
+    \hline
+   % Add more rows as needed
 \end{tabular}
-\end{table}
 
 
 \newpage
@@ -432,7 +447,95 @@ This document outlines the process of modifying a "Submit" button in a mind read
         \item Area of Polar Curve: $A = \frac{1}{2} \int_{\alpha}^{\beta} r^2 \,d\theta$
     \end{itemize}
 \end{enumerate}
+\newpage 
+\begin{center}
+\textbf{\LARGE{{Member 5 :Moumita Modak}}} 
+\end{center}
 
+\begin{center}
+    \Huge\textbf{CV}
+\end{center}   
+\pagenumbering{gobble}
+% Custom colors
+\definecolor{headerblue}{HTML}{1F3C88}
+\definecolor{accent}{HTML}{007ACC}
+\definecolor{darkgray}{gray}{0.2}
+
+% Custom fonts
+
+\renewcommand{\familydefault}{\sfdefault}
+
+% Section formatting
+\titleformat{\section}{\Large\bfseries\color{headerblue}}{}{0em}{}[\titlerule]
+\titleformat{\subsection}{\large\bfseries\color{darkgray}}{}{0em}{}[\vspace{0.5em}\titlerule]
+
+% Header
+\pagestyle{fancy}
+\fancyhf{}
+\fancyhead[C]{\textcolor{headerblue}}
+
+% Footer
+\fancyfoot[C]{\thepage}
+\renewcommand{\footrulewidth}{0.4pt}
+\renewcommand{\headrulewidth}{0.4pt}
+
+
+
+\begin{center}
+    {\Huge \textbf{\textcolor{headerblue}{Moumita Modak}}}\\
+    \vspace{2mm}
+    \href{mailto:modakmoumita789@@gmail.com}{\textcolor{darkgray}{\faEnvelope \hspace{1mm} modakmoumita789@gmail.com}} \quad
+    \href{tel:+918335920022}{\textcolor{darkgray}{\faPhone \hspace{1mm} +91-8335920022}} \\
+    \href{https://github.com/moumitamodak}{\textcolor{darkgray}{\faGithub \hspace{1mm} github.com/moumitamodak}} \quad
+    \href{https://www.linkedin.com/in/moumita-modak-1797062b9}{\textcolor{darkgray}{\faLinkedin \hspace{1mm} linkedin.com/in/moumita-modak-1797062b9}} \quad
+\end{center}
+
+\vspace{5mm}
+
+\section*{Education}
+\begin{tabular}{p{0.7\textwidth} p{0.3\textwidth}}
+    \textbf{BSc in IT (Artificial Intelligence)}, Maulana Abul Kalam Azad University Of Technology, Kalyani & \hfill \textbf{2023 -- 2027} \\
+    GPA: 8.0/10.0 & \\
+\end{tabular}
+
+\section*{Skills}
+\begin{tabular}{p{0.5\textwidth} p{0.5\textwidth}}
+    \textbf{Programming Languages:} & HTML, CSS, JavaScript, C, C++, Python \\
+    \textbf{Web Development:} & React, Bootstrap, jQuery \\
+    \textbf{Tools:} & Git, GitHub, VS Code, Postman \\
+    \textbf{Design:} & Photoshop, Illustrator \\
+\end{tabular}
+
+\section*{Experience}
+\subsection*{Web Development Projects}
+\begin{itemize}[leftmargin=0.5cm]
+    \item Developed responsive websites using HTML, CSS, JavaScript.
+    \item Worked with peers on user-friendly interfaces.
+    \item Integrated RESTful APIs in projects.
+\end{itemize}
+
+\subsection*{Project: SymbolApp}
+\begin{itemize}[leftmargin=0.5cm]
+    \item Created a Java AWT application to manage symbols.
+    \item Implemented features like creation, deletion, modification.
+\end{itemize}
+
+\section*{Projects}
+\subsection*{LaTeX Lab Notebook}
+\begin{itemize}[leftmargin=0.5cm]
+    \item Created a lab notebook using LaTeX with indexing and custom formatting.
+\end{itemize}
+
+\subsection*{Music Player}
+\begin{itemize}[leftmargin=0.5cm]
+    \item Developing a JavaScript music player with playlist management.
+\end{itemize}
+
+
+\section*{Interests}
+\begin{itemize}[leftmargin=0.5cm]
+    \item Gaming robotics,military applications,expert systems,search engines.
+\end{itemize}
 \end{document}
 
 
