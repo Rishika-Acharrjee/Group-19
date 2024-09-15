@@ -15,6 +15,8 @@
 \usepackage{fontawesome}
 \usepackage{enumitem}
 \usepackage{geometry}
+\usepackage{amsmath}
+
 
 \newlength{\PageFrameTopMargin}
 \newlength{\PageFrameBottomMargin}
@@ -184,6 +186,7 @@ int main() {
 }
 \end{verbatim}
 
+
 \subsection{Compiling and Running the Program}
 To compile and run the calculator program:
 \begin{enumerate}
@@ -246,6 +249,67 @@ To add this calculator program to a GitHub repository, follow these steps:
     \item Go to your GitHub repository URL in a web browser.
     \item Verify that the \texttt{calculator.c} file is listed and accessible in the repository.
 \end{enumerate}
+The given code takes two double inputs (\texttt{num1} and \texttt{num2}), performs a mathematical operation based on the operator provided, and prints the result. Below are the possible outputs depending on the operator and inputs.
+
+\subsection{1. Addition Case (\texttt{'+'} Operator)}
+If the operator is \texttt{'+'}, the code will add \texttt{num1} and \texttt{num2} and output the result.
+
+\[
+\text{Input:} \ 5.2, \ 3.8, \ +
+\]
+\[
+\text{Output:} \ \text{Result:} \ 9.00
+\]
+
+\subsection{2. Subtraction Case (\texttt{'-'} Operator)}
+If the operator is \texttt{'-'}, the code will subtract \texttt{num2} from \texttt{num1} and output the result.
+
+\[
+\text{Input:} \ 10.5, \ 4.2, \ -
+\]
+\[
+\text{Output:} \ \text{Result:} \ 6.30
+\]
+
+\subsection{3. Multiplication Case (\texttt{'*'} Operator)}
+If the operator is \texttt{'*'}, the code will multiply \texttt{num1} and \texttt{num2} and output the result.
+
+\[
+\text{Input:} \ 7.0, \ 3.0, \ *
+\]
+\[
+\text{Output:} \ \text{Result:} \ 21.00
+\]
+
+\subsection{4. Division Case (\texttt{'/'} Operator)}
+If the operator is \texttt{'/'} and \texttt{num2} is not zero, the code will divide \texttt{num1} by \texttt{num2} and output the result.
+
+\[
+\text{Input:} \ 20.0, \ 4.0, \ /
+\]
+\[
+\text{Output:} \ \text{Result:} \ 5.00
+\]
+
+\subsection{5. Division by Zero Case}
+If the operator is \texttt{'/'} and \texttt{num2} is zero, the code will print an error message and return \texttt{-1}.
+
+\[
+\text{Input:} \ 10.0, \ 0, \ /
+\]
+\[
+\text{Output:} \ \text{Error! Division by zero.}
+\]
+
+\subsection{6. Invalid Operator Case}
+If an invalid operator is provided, the code will print an error message and return \texttt{-1}.
+
+\[
+\text{Input:} \ 5.0, \ 3.0, \ \hat{ } 
+\]
+\[
+\text{Output:} \ \text{Error! Operator is not correct.}
+\]
 \vspace{10in}
 \begin{center}
     \textbf{\LARGE{{Member 4: [Pritam Sarkar]}}}
@@ -365,10 +429,6 @@ This document outlines the process of modifying a "Submit" button in a mind read
 \end{itemize}
 \vspace{20in}
 
-\documentclass{article}
-\usepackage{amsmath} % For mathematical notation
-
-\begin{document}
 
 % Large name at the top
 \begin{center}
