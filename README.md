@@ -2,8 +2,7 @@
 # Group Assignment: Lab Notebook
 
 ## Overview
-
-This repository contains the LaTeX file for our group task. The file is structured as a lab notebook, with each group member contributing a lab entry.
+This repository contains LaTeX file , which is Group 19's Lab Notebook Assignment. It is structured as any other lab notebook or lab copy we make, just in digital version, having a cover page, acknowledgement, index page and the content which includes all the practical tasks we have done throughout Software Tools and Technology Class, in Semester II, with each group member contributing a lab entry.
 
 ## Project Structure
 
