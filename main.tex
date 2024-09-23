@@ -16,23 +16,17 @@
 \usepackage{enumitem}
 \usepackage{geometry}
 \usepackage{amsmath}
-
-
 \newlength{\PageFrameTopMargin}
 \newlength{\PageFrameBottomMargin}
 \newlength{\PageFrameLeftMargin}
 \newlength{\PageFrameRightMargin}
-
 \setlength{\PageFrameTopMargin}{2cm}
 \setlength{\PageFrameBottomMargin}{2cm}
 \setlength{\PageFrameLeftMargin}{2cm}
 \setlength{\PageFrameRightMargin}{2cm}
-
 \makeatletter
-
 \newlength{\Page@FrameHeight}
 \newlength{\Page@FrameWidth}
-
 \AddToShipoutPicture{
   \thinlines
   \setlength{\Page@FrameHeight}{\paperheight-\PageFrameTopMargin-\PageFrameBottomMargin}
@@ -42,7 +36,6 @@
 
 \makeatother
 \begin{document}
-
 \begin{figure}[h]
     \includegraphics[width=1\textwidth]{Line.png}
 \end{figure}
@@ -65,7 +58,7 @@
 \end{center}
 \vspace{1cm}
 \renewcommand{\arraystretch}{2}
-\hspace*{0.08in}
+\begin{center}
 \begin{tabular}{ |c|c|c| }
 \hline
 \multicolumn{3}{|c|}{\Large \textbf{\textit{Group 19}}} \\
@@ -76,15 +69,14 @@ Rishika Acharjee [Group-Leader]  & 30001223016 & BCA \\
 \hline
 Ankita Ghoshal & 330085323012 & Bsc IT in CS \\
 \hline
-Moumita Modak  & 30054623014 & Bsc IT in AI \\
+Pritam Sarkar  & 30001223042 & BCA \\
 \hline
-Pritam Sarkar & 30001223042 & BCA \\
+Titli Biswas & 30059223018 & BSc in Forensic Science \\
 \hline
-Titli Biswas & 30059223018 & BSc in Data Science \\
+Moumita Modak & 30054623014 & Bsc IT in AI \\
 \hline
 \end{tabular}
-\vspace{1cm}
-
+\end{center}
 \lstset{
     basicstyle=\ttfamily,
     keywordstyle=\color{blue},
@@ -92,42 +84,104 @@ Titli Biswas & 30059223018 & BSc in Data Science \\
     stringstyle=\color{purple},
     breaklines=true,
 }
-\begin{center}
-    \includegraphics[width=1\textwidth]{Line.png}
-\end{center}
 \newpage
-
-% Center the Index heading
 \begin{center}
     \Huge\textbf{Index}
 \end{center}
 
 \vspace{1cm}
 
-% Table for Index with Sl. No., Experiment, and Page No. columns
 \begin{tabular}{|c|p{10cm}|c|}
     \hline
     \textbf{Sl. No.} & \textbf{Experiment} & \textbf{Page No.} \\
     \hline
-    1 & Lab Note Book & \\
+    1 & Introduction to Latex & 1\\
     \hline
-    2 & Lab 1: Calculator Program using C & 1-3\\
+    2 & Calculator Program using C & 3\\
     \hline
-    3 & Converting a submit button to Chin Tapak Dum Dum & 4-6 \\
+    3 & Converting a submit button to Chin Tapak Dum Dum & 7 \\
     \hline
-    4 & Mathematical Notation & 7-8\\
+    4 & Mathematical Notation & 10\\
     \hline
-    5 & CV & 9-10 \\
+    5 & CV & 12 \\
     \hline
-   % Add more rows as needed
+
 \end{tabular}
+\newpage
 
+\begin{titlepage}
+    \centering
+    \vspace*{\fill}
+    
+    \Huge \textbf{Acknowledgment}
+    
+    \vspace{1cm}
+    
+    \large
+    We gratefully acknowledge the efforts of all group members in contributing their respective lab notebook entries and committing them to the GitHub repository. We extend our sincere gratitude to the subject-faculties for their valuable guidance and support throughout this assignment. This experience has significantly enhanced our skills in LaTeX and collaborative work.
+    
+    \vspace*{\fill}
+    
+    \begin{flushright}
+    
+        \vspace{2cm}
+        \underline{\hspace{3.7cm}}
+        \\
+        Student's Signature
+    \end{flushright}
+\end{titlepage}
 
+\newpage
+\pagestyle{plain}
+\fancyhf{}
+\begin{center}
+    \textbf{\LARGE{{Group-Leader: [Rishika Acharjee]}}}
+\end{center}
+\section{Introduction to \LaTeX} is a typesetting system that is widely used for producing scientific and technical documents. It is especially popular for creating documents with complex mathematical formulas, tables, and figures. Unlike word processors, \LaTeX{} provides greater control over document structure and presentation, making it a preferred tool in academia and industry.
+
+\subsection {Key Features of \LaTeX}
+Some of the key features of \LaTeX{} include:
+\begin{itemize}
+    \item High-quality typesetting, especially for mathematical and technical content.
+    \item Separation of content and style, allowing users to focus on writing.
+    \item Automated table of contents, bibliography, and cross-references.
+    \item Supports a wide range of document types, including articles, books, reports, and presentations.
+    \item Extensible through packages for additional functionality, such as graphics, tables, and advanced formatting.
+\end{itemize}
+\subsection{Why Use \LaTeX?}
+There are several reasons to use \LaTeX{}:
+\begin{itemize}
+    \item \textbf{Precision}: \LaTeX{} provides exceptional control over document structure and formatting, ensuring that everything looks just right.
+    \item \textbf{Mathematical Formulas}: It is the standard for creating documents that contain mathematical symbols and equations.
+    \item \textbf{Professional Quality}: Documents created with \LaTeX{} have a professional appearance, suitable for academic papers, theses, and books.
+    \item \textbf{Consistency}: Once a style is defined, it is applied consistently throughout the document.
+    \item \textbf{Collaboration}: Multiple users can work on the same document without formatting issues, as \LaTeX{} is plain text-based.
+\end{itemize}
+\subsection{Creating a \LaTeX{} Repository on GitHub using GitHub Desktop}
+Version control is crucial for managing changes in documents, especially when working on complex projects. GitHub provides a platform for managing repositories, and GitHub Desktop simplifies working with GitHub.
+
+\begin{center}
+To create a \LaTeX{} repository on GitHub using GitHub Desktop:
+\end{center}
+\begin{enumerate}
+    \item \textbf{Install GitHub Desktop}: Download and install GitHub Desktop from \url{https://desktop.github.com/}.
+    \item \textbf{Create a GitHub Account}: If you don’t have one, sign up for GitHub at \url{https://github.com/}.
+    \item \textbf{Create a New Repository}: Open GitHub Desktop and click on \textit{File} $\rightarrow$ \textit{New Repository}. Name your repository, select the local path, and ensure the repository is initialized with a README.
+    \item \textbf{Clone the Repository}: After creating the repository on GitHub, use GitHub Desktop to clone the repository to your local machine by clicking on \textit{File} $\rightarrow$ \textit{Clone Repository}.
+    \item \textbf{Add Your \LaTeX{} Files}: Open the cloned folder on your computer and add your \LaTeX{} source files (.tex, .bib, etc.). 
+    \item \textbf{Commit and Push}: After adding your files, return to GitHub Desktop, write a commit message, and click on \textit{Commit to main}. Then click on \textit{Push origin} to upload your changes to GitHub.
+\end{enumerate}
+\begin{figure}[h!]
+    \centering
+    \includegraphics[width=0.5\linewidth]{LaTeX_logo.png}
+    \caption{\LaTeX}
+    
+\end{figure}
 \newpage
 \begin{center}
     \textbf{\LARGE{{Member 2: [Ankita Ghoshal]}}}
 \end{center}
-\section{Lab 1: Calculator Program using C}
+\section{Calculator Program using C}
 \subsection{Objective}
 The objective of this lab is to develop a basic calculator program using the C programming language. The calculator will perform simple arithmetic operations like addition, subtraction, multiplication, and division based on user input.
 
@@ -312,7 +366,7 @@ If an invalid operator is provided, the code will print an error message and ret
 \]
 \vspace{10in}
 \begin{center}
-    \textbf{\LARGE{{Member 4: [Pritam Sarkar]}}}
+    \textbf{\LARGE{{Member 3: [Pritam Sarkar]}}}
 \end{center}
 \section{Introduction}
 This document outlines the process of modifying a "Submit" button in a mind reader application and submitting a pull request to the original GitHub repository. The repository in question is available at \url{https://github.com/GeekAyan/STT}. The modification includes renaming the button and fixing proportion issues.
@@ -429,12 +483,9 @@ This document outlines the process of modifying a "Submit" button in a mind read
 \end{itemize}
 \vspace{20in}
 
-
-% Large name at the top
 \begin{center}
-    {\LARGE Member : 4 [TITLI BISWAS]}
+\textbf{\LARGE{{Member 4: TITLI BISWAS}}} 
 \end{center}
-
 \section{Mathematical Notation}
 
 \begin{enumerate}
@@ -467,23 +518,24 @@ This document outlines the process of modifying a "Submit" button in a mind read
         \item Display math mode: $\displaystyle\left|\frac{22 - 2}{4}\right|$
     \end{itemize}
 
-    \item Tables and equation arrays
-    \begin{itemize}
+    index\item Tables and Equation Arrays
+        \begin{enumerate}
         \item
-        \[
-        \begin{array}{c|c|c|c|c}
-        x & 1 & 2 & 3 & 4 \\
-        f(x) & 2 & 2 & 2 & 2 \\
-        \end{array}
-        \]
+        \begin{tabular}{|c||c|c|c|c|}
+        \hline
+        $x$ & 1 & 2 & 3 & 4 \\
+        \hline
+        $f(x)$ & 1 & 1 & 2 & 3 \\
+        \hline
+        \end{tabular}
         \item
         \begin{align}
-        2 + 2 - 2 \times 4 &= x \\
-        2 + 2 - 8 &= x \\
-        4 - 6 &= x \\
-        x &= -2
+        1 + 1 - 2 \times 3 &= x \tag{1} \\
+        1 + 1 - 6 &= x \tag{2} \\
+        2 - 6 &= x \tag{3} \\
+        x &= -4 \tag{4}
         \end{align}
-    \end{itemize}
+        \end{enumerate} 
 
     \item Functions \& Formulas
     \begin{itemize}
@@ -509,9 +561,8 @@ This document outlines the process of modifying a "Submit" button in a mind read
 \end{enumerate}
 \newpage 
 \begin{center}
-\textbf{\LARGE{{Member 5 :Moumita Modak}}} 
+\textbf{\LARGE{{Member 5:Moumita Modak}}} 
 \end{center}
-
 \begin{center}
     \Huge\textbf{CV}
 \end{center}   
@@ -597,5 +648,3 @@ This document outlines the process of modifying a "Submit" button in a mind read
     \item Gaming robotics,military applications,expert systems,search engines.
 \end{itemize}
 \end{document}
-
-
